@@ -3,7 +3,7 @@ use strict;
 use warnings;
 use parent qw/Exporter/;
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 our @EXPORT = qw/
     seq
@@ -98,7 +98,7 @@ And C<\&code> takes $n items at a time(also give $step_count and $offset).
 
     warn Dumper($result); # [ 0, 2, 4 ]
 
-*NOTE*: Return value of C<seq> is the array reference of return values of C<\&code> in scalar context. However, C<seq> was called in the list context, then return value is the *flatten* list.
+B<NOTE>: Return value of C<seq> is the array reference of return values of C<\&code> in scalar context. However, C<seq> was called in the list context, then return value is the B<flatten> list.
 
     use Sub::Sequence;
     use Data::Dumper;
@@ -136,6 +136,8 @@ Dai Okabayashi E<lt>bayashi@cpan.orgE<gt>
 An interface of this module was inspired by L<Sub::Retry>.
 
 Also check similar modules, L<Iterator::GroupedRange> and C<natatime> method in L<List::MoreUtils>.
+
+Lastly, see C<benchmark.pl> (Sub::Sequence vs splice vs natatime) in C<samples> directory.
 
 
 =head1 LICENSE

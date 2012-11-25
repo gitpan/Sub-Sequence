@@ -16,7 +16,7 @@ name: Sub-Sequence
 provides:
   Sub::Sequence:
     file: lib/Sub/Sequence.pm
-    version: 0.02
+    version: 0.03
 requires:
   Carp: 0
   Exporter: 0
@@ -25,4 +25,4 @@ requires:
 resources:
   license: http://dev.perl.org/licenses/
   repository: http://github.com/bayashi/Sub-Sequence
-version: 0.02
+version: 0.03
